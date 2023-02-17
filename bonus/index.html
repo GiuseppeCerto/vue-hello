@@ -10,7 +10,7 @@
 
         <div id="app">
             <h1>{{ title }}</h1>
-            <div></div>
+          <img img v-bind:src="image" alt="#">
         </div>
         
         <script>
@@ -19,7 +19,8 @@
           createApp({
             data() {
               return {
-                title: 'Hello Vue!'
+                title: 'Hello Vue!',
+                image:'./img/img.jpg',
               }
             }
           }).mount('#app')
